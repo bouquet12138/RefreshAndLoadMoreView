@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--下拉控件的头view-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="#eee"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+    <!--云布局-->
+
+    <com.example.dropdownloadview.custom_view.GifView
+        android:id="@+id/gifView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        app:gif="@raw/cloud"
+        app:paused="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/entirety"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/balloon"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/balloon" />
+    </RelativeLayout>
+
+</RelativeLayout>
